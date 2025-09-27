@@ -18,7 +18,7 @@
   
 (3) $\frac{dx_1(t)}{dt}=x_2(t)$  
   
-(4) $\frac{dx_2(t)}{dt}=-\frac{b}{M}x_1(t)+\frac{1}{M}r(t)$ 
+(4) $\frac{dx_2(t)}{dt}=\frac{-b}{M}x_2(t)-\frac{-k}{M}x_1(t)+\frac{1}{M}r(t)$ 
   
 (5) $y(t)=x_1(t)$  
   
