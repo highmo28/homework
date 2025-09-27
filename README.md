@@ -8,7 +8,29 @@
 - Output은 Input과 State의 조합으로 구성된다.  
 - State는 서로 독립적인 값으로 설정해야 한다.  
   
-## 2. Example 2: R-L-C circuit system  
+
+## 2. Example 1: spring-mass-damper system  
+![spring-mass-damper](https://drive.google.com/uc?id=1eBS-bpgIs0NFTZRPJ4jeGwl1ImEhJLjy)  
+  
+(1) $M\frac{d^2y(t)}{dt^2}+b\frac{dy(t)}{dt}+ky(t)=r(t)$  
+  
+(2) $x_1(t)=y(t), x_2(t)=\frac{dy(t)}{dt}$  
+  
+(3) $\frac{dx_1(t)}{dt}=x_2(t)}$  
+  
+(4) $\frac{dx_2(t)}{dt}=-\frac{b}{M}x_1(t)+\frac{1}{M}r(t)$ 
+  
+(5) $y(t)=x_1(t)$  
+  
+
+
+
+
+
+
+
+
+## 3. Example 2: R-L-C circuit system  
 ![RLC 회로](https://drive.google.com/uc?id=1O8A6dEUWiXf7Kmyx3uaxxJDDp5iMdhEV)  
   
 (1) $x_1(t)=v_c(t), x_2(t)=i_L(t)$  
