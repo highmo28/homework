@@ -9,4 +9,5 @@
 - State는 서로 독립적인 값으로 설정해야 한다.  
   
 ## 2. Example 2: R-L-C circuit system  
-![RLC 회로](https://drive.google.com/file/d/1O8A6dEUWiXf7Kmyx3uaxxJDDp5iMdhEV/view?usp=sharing)
+![RLC 회로](https://drive.google.com/uc?id=1O8A6dEUWiXf7Kmyx3uaxxJDDp5iMdhEV
+)
