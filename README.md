@@ -16,7 +16,7 @@
   
 (2) $x_1(t)=y(t), x_2(t)=\frac{dy(t)}{dt}$
   
-(3) $\frac{dx_1(t)}{dt}=x_2(t)}$  
+(3) $\frac{dx_1(t)}{dt}=x_2(t)$  
   
 (4) $\frac{dx_2(t)}{dt}=-\frac{b}{M}x_1(t)+\frac{1}{M}r(t)$ 
   
