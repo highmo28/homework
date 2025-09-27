@@ -12,7 +12,7 @@
 ![RLC 회로](https://drive.google.com/uc?id=1O8A6dEUWiXf7Kmyx3uaxxJDDp5iMdhEV)  
 $x_1(t) = v_c(t), x_2(t) = i_L(t)$  
 
-$u(t)=C\frac{dx_1(t)}{dt}+x_2(t) &rarr$
+$u(t)=C\frac{dx_1(t)}{dt}+x_2(t) &rarr; C\frac{dx_1(t)}{dt}=C\frac{1}{C}[-x_2(t)+u(t)]$
 
 **By KCL**  
 
