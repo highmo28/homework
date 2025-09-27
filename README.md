@@ -11,17 +11,14 @@
 ## 2. Example 2: R-L-C circuit system  
 ![RLC 회로](https://drive.google.com/uc?id=1O8A6dEUWiXf7Kmyx3uaxxJDDp5iMdhEV)  
   
-$x_1(t)=v_c(t), x_2(t)=i_L(t)$  
-  
----
+(1) $x_1(t)=v_c(t), x_2(t)=i_L(t)$  
 **By KCL**  
 $u(t)=C\frac{dx_1(t)}{dt}+x_2(t) &rarr; \frac{dx_1(t)}{dt}=\frac{1}{C}[-x_2(t)+u(t)]$  
   
 **By KVL**  
 $L\frac{x_2(t)}{dt}+Rx_2(t)-x_1(t)=0 &rarr; \frac{x_2(t)}{dt}=\frac{1}{L}[x_1(t)-Rx_2(t)]$  
+
+(2) $\frac{dx_1(t)}{dt}=\frac{1}{C}[-x_2(t)+u(t)]$,  
   
----
-$\frac{dx_1(t)}{dt}=\frac{1}{C}[-x_2(t)+u(t)]$,  
-  
-$\frac{dx_2(t)}{dt}=\frac{1}{L}[x_1(t)-Rx_2(t)]$,  
+(3) $\frac{dx_2(t)}{dt}=\frac{1}{L}[x_1(t)-Rx_2(t)]$,  
 $y(t)=Rx_2(t)$
