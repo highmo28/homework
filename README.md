@@ -77,6 +77,14 @@ x_n(t)
 \end{pmatrix}
 $$
 
+$$
+x(t) = \begin{pmatrix}
+x_1(t) \\
+x_2(t) \\
+\vdots \\
+x_n(t)
+\end{pmatrix}
+$$
 
 ## 6. Example 3.1 (State Space Equation)
 
