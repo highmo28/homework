@@ -135,6 +135,7 @@ n차 미분방정식을 풀 때는 n개의 state를 설정해야 하며, 이 sta
 이 상태에서 라플라스 변환을 적용하면 식 (1)과 같은 결과를 얻을 수 있는데, 이때는 행렬 연산이므로 반드시 s 옆에 단위행렬 I를 붙여 sI-A 형태로 계산해야 한다는 점에 주의해야 한다. 이후, 앞서 파트 4에서와 마찬가지로 치환을 적용하면 식 (2)처럼 정리할 수 있고, 이 식은 다시 (3)으로 변형된다. 최종적으로 정리하면 식 (4)와 같은 결과를 얻으며, 여기서 $\Phi(t)$는 State transition matrix라고 불린다.
 
 ## 7. Example 3.1 (State Space Equation)  
+![Example 3.1](https://drive.google.com/uc?id=1-1xZqy9gUNjA2rVSfLWKgOLvhRLmiNGx)  
 
 
 
