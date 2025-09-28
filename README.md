@@ -68,6 +68,7 @@ state를 정의하게 되면 시스템은 식 (1)과 같이 1차 미분방정식
   
 ## 5. State Space Equation  
 **State vector**  
+
 $$
 x(t) = \begin{pmatrix}
 x_1(t) \\
