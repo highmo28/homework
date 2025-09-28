@@ -136,7 +136,8 @@ n차 미분방정식을 풀 때는 n개의 state를 설정해야 하며, 이 sta
 
 ## 7. Example 3.1 (State Space Equation)  
 ![Example 3.1](https://drive.google.com/uc?id=1-1xZqy9gUNjA2rVSfLWKgOLvhRLmiNGx)  
-
+  
+- $x(t)$
 
 
 
