@@ -65,7 +65,7 @@ $x_1'(t)=ax_1(t)+bu(t)$
 (7) $x(t)=\phi(t)x(0)$+ $\int$ $\phi(t-\tau)bu(\tau)d\tau$  
   
   
-(ex) $\int\mathrm{e}^{-x}\\mathrm{d}x$
+(ex) $\int\mathrm{e}^{-x}\mathrm{d}x$
 
 
 
