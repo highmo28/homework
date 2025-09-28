@@ -58,7 +58,7 @@ $x_1'(t)=ax_1(t)+bu(t)$
   
 (4) $X(s)=/frac{1}{s-a}x(0)+\frac{1}{s-a}bU(s)$  
   
-(5) $x(t)=e^{at}$
+(5) $x(t)=e^{at}$ $int$
 
 
 
