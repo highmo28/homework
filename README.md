@@ -85,14 +85,28 @@ Output equation : $y(t)=Cx(t)+Du(t)$
   
 EX. RLC circuit  
 
-$$
-x(t) = \begin{pmatrix}
-x_1(t) \\
-x_2(t) \\
-\vdots \\
-x_n(t)
+$\frac{dx_1(t)}{dt}=\frac{1}{C}[-x_2(t)+u(t)]$,  
+  
+$\frac{dx_2(t)}{dt}=\frac{1}{L}[x_1(t)-Rx_2(t)]$,  
+  
+$y(t)=Rx_2(t)$  
+  
+$&barr;$  
+  
+$$x'(t) = \begin{bmatrix}
+0 & -\frac{1}{c} \\
+\frac{1}{L} & -\frac{R}{L}
+\end{bmatrix}x(t) + 
+\begin{bmatrix}
+\frac{1}{C} \\
+0
+\end{bmatrix}
 $$  
-
+  
+$$y(t) = \begin{bmatrix}
+0 & R
+\end{bmatrix}x(t)+0u(t)
+$$
 
 
 ## 6. Example 3.1 (State Space Equation)
