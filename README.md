@@ -99,8 +99,13 @@ $$x'(t) = \begin{bmatrix}
 \end{bmatrix}u(t), y(t) = \begin{bmatrix}
 0 & R
 \end{bmatrix}x(t)+0u(t)
-$$
+$$  
+  
+n차 미분방정식을 풀 때는 n개의 state를 설정해야 하며, 이 state들은 하나의 State vector 형태로 정의된다. 이렇게 정의된 State vector를 이용하면, 그 미분은 State vector에 행렬 A를 곱한 것과 입력 u(t)에 행렬 B를 곱한 형태로 나타낼 수 있다. 예를 들어 위 다뤘던 RLC 회로에 적용해 보면, 원래는 1차 미분방정식 2개가 연립방정식의 형태로 있었지만 이를 하나의 행렬 1차 미분방정식으로 정리할 수 있음을 확인할 수 있다. 출력 y(t)에 대한 식 역시 같은 방식으로 만들어진다.  
 
+즉, 고차 미분방정식을 여러 개의 1차 미분방정식으로 바꾼 뒤 이를 다시 1차 행렬 미분방정식으로 정리한 결과를 State differential equation이라 하고, state들과 input을 조합하여 출력식을 만든 것을 Output equation이라 한다. 이 두 식을 세트로 묶은 전체를 State space equation이라고 부른다.  
+
+이러한 변환을 통해 두 가지 장점을 얻을 수 있다. 첫째, state들에 의미를 부여했기 때문에 단순히 해를 구하는 데서 끝나지 않고, 해석 과정에서 물리적 의미를 파악할 수 있다. 둘째, 식이 1차 행렬 미분방정식으로 단순화되므로 컴퓨터 계산에 훨씬 용이해진다.
 
 ## 6. Example 3.1 (State Space Equation)
 
