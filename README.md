@@ -96,8 +96,7 @@ $&darr;&darr;&darr;&darr;&darr;$
 $$x'(t) = \begin{bmatrix}
 0 & -\frac{1}{c} \\
 \frac{1}{L} & -\frac{R}{L}
-\end{bmatrix}x(t)
-$$+$$\begin{bmatrix}
+\end{bmatrix}x(t)+\begin{bmatrix}
 \frac{1}{C} \\
 0
 \end{bmatrix}u(t)
