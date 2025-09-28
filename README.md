@@ -66,7 +66,7 @@ $x_1'(t)=ax_1(t)+bu(t)$
   
 state를 정의하게 되면 시스템은 식 (1)과 같이 1차 미분방정식의 연립방정식으로 표현된다. 이 식을 라플라스 변환하면 식 (2)로 바뀌게 되고, 이를 정리하면 식 (3)과 같은 형태가 된다. 다시 정리하면 식 (4)와 같고, 이를 역라플라스 변환하면 식 (5)로 나타낼 수 있다. 여기서 식 (6)과 같이 치환하게 되면 식 (5)는 식 (7)로 바뀌게 된다. 최종적으로 정리된 식 (7)은 두 부분으로 나누어 해석할 수 있는데, 좌항은 $\phi(t)x(0)$로 초기 상태가 시간에 따라 어떻게 변환되는지를 나타내고, 우항은 $\int\mathrm\phi(t-\tau)bu(\tau)\mathrm{d}\tau$로 입력 $u(t)$가 시스템을 거쳐 누적된 효과를 나타낸다. 즉, state를 정의하면 시스템의 응답을 “초기상태에 의한 응답”과 “입력에 의한 응답”으로 구분해 의미를 부여할 수 있으며, 만약 $u(t)=0$이라면 좌항만 남아 초기상태 변화만을 확인할 수 있고, 입력이 존재한다면 우항을 통해 그 효과를 확인할 수 있다.  
   
-## 5. State Space Equation  
+## 5. State Space Equation(State vector and state space equation)  
 **State vector**  
 
 $$
@@ -78,14 +78,17 @@ x_n(t)
 \end{pmatrix}
 $$  
   
+  
 **State space equation**  
 
 State differential equation : $x'(t)=Ax(t)+Bu(t)$  
 Output equation : $y(t)=Cx(t)+Du(t)$  
   
+  
 **EX. RLC circuit**  
 
 $\frac{dx_1(t)}{dt}=\frac{1}{C}[-x_2(t)+u(t)]$, $\frac{dx_2(t)}{dt}=\frac{1}{L}[x_1(t)-Rx_2(t)]$, $y(t)=Rx_2(t)$  
+  
   
 $$x'(t) = \begin{bmatrix}
 0 & -\frac{1}{c} \\
@@ -94,9 +97,7 @@ $$x'(t) = \begin{bmatrix}
 \frac{1}{C} \\
 0
 \end{bmatrix}u(t)
-$$  
-  
-$$y(t) = \begin{bmatrix}
+$$, $$y(t) = \begin{bmatrix}
 0 & R
 \end{bmatrix}x(t)+0u(t)
 $$
