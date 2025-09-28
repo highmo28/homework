@@ -76,7 +76,7 @@ vdots\\
 x_n(t)
 \end{pmatrix}$
 
-$\begin{pmatrix}x_1(t)\\x_2(t)\\vdots\\x_n(t)\end{pmatrix}$
+$\begin{pmatrix}x_1(t)\\x_2(t)\\vdots\\x_n(t)\\ \end{pmatrix}$
 
 
 
