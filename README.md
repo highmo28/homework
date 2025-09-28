@@ -116,9 +116,10 @@ n차 미분방정식을 풀 때는 n개의 state를 설정해야 하며, 이 sta
 이러한 변환을 통해 두 가지 장점을 얻을 수 있다. 첫째, state들에 의미를 부여했기 때문에 단순히 해를 구하는 데서 끝나지 않고, 해석 과정에서 물리적 의미를 파악할 수 있다. 둘째, 식이 1차 행렬 미분방정식으로 단순화되므로 컴퓨터 계산에 훨씬 용이해진다.
 
 ## 6. State Space Equation(State transition matrix)  
-1st Order : $x(t)=e^{at}x(0)&+$\int\mathrm{e}^{a(t-\tau)}bu(\tau)\mathrm{d}\tau$  
+
+1st Order : $x(t)=e^{at}x(0)$ + $\int\mathrm{e}^{a(t-\tau)}bu(\tau)\mathrm{d}\tau$  
   
-n-th Order : $x(t)=exp(At)x(0)&+$\int\mathrm{expA(t-\tau)}Bu(\tau)\mathrm{d}\tau$
+n-th Order : $x(t)=exp(At)x(0)$ + $\int\mathrm{expA(t-\tau)}Bu(\tau)\mathrm{d}\tau$
 
 
 
