@@ -137,8 +137,24 @@ n차 미분방정식을 풀 때는 n개의 state를 설정해야 하며, 이 sta
 ## 7. Example 3.1 (State Space Equation)  
 ![Example 3.1](https://drive.google.com/uc?id=1-1xZqy9gUNjA2rVSfLWKgOLvhRLmiNGx)  
   
-- $x(t)$
-
+- $M_{1}p''(t)=u(t)-b_{1}[p'(t)-q'(t)]-k_{1}[p(t)-q(t)]$
+- $M_{2}q''(t)=b_{1}[p'(t)-q'(t)]+k_{1}[p(t)-q(t)]-b_{2}q'(t)-k_{2}q(t)$  
+  
+  
+$$
+x(t) = \begin{pmatrix}
+x_1(t) \\
+x_2(t) \\
+x_3(t) \\
+x_4(t)
+\end{pmatrix}+
+\begin{pmatrix}
+p(t) \\
+q(t) \\
+p'(t) \\
+q'(t)
+\end{pmatrix}
+$$
 
 
 
