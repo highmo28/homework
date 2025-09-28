@@ -158,12 +158,12 @@ q'(t)
 0 & 0 & 0 & 1 \\
 -\frac{k_1}{M_1} & \frac{k_1}{M_1} & -\frac{b_1}{M_1} & \frac{b_1}{M_1} \\
 \frac{k_1}{M_2} & -\frac{k_1+k_2}{M_2} & \frac{b_1}{M_2} & -\frac{b_1+b_2}{M_2}
-\end{pmatrix}x(t)+\begin{bmatrix}
+\end{bmatrix}x(t)+\begin{bmatrix}
 0 \\
 0 \\
 \frac{1}{M_1} \\
 0
-\begin{bmatrix}u(t)
+\end{bmatrix}u(t)
 $$  
 
 
