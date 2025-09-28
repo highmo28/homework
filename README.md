@@ -123,7 +123,7 @@ n-th Order : $x(t)=exp(At)x(0)$ + $\int\mathrm{exp[A(t-\tau)]}Bu(\tau)\mathrm{d}
   
 $x(s)=[sI-A]^{-1}x(0)+[sI-A]^{-1}BU(s)$  
 $\phi(s)[sI-A]^{-1}$  
-$\Phi(t)=L^{-1}[\Phi(s)]  
+$\Phi(t)=L^{-1}[\Phi(s)]$  
 $x(t)=\Phi(t)x(0)$ + $\int\mathrm{\Phi(t-\tau)}bu(\tau)\mathrm{d}\tau$
 
 
