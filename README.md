@@ -76,16 +76,12 @@ x_2(t) \\
 \vdots \\
 x_n(t)
 \end{pmatrix}
-$$
+$$  
+  
+**State space equation**  
 
-$$
-x(t) = \begin{pmatrix}
-x_1(t) \\
-x_2(t) \\
-\vdots \\
-x_n(t)
-\end{pmatrix}
-$$
+$x'(t)=Ax(t)+Bu(t)$ (State differential equation)
+$y(t)=Cx(t)+Du(t)$ (Output equation)
 
 ## 6. Example 3.1 (State Space Equation)
 
