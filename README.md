@@ -117,14 +117,14 @@ n차 미분방정식을 풀 때는 n개의 state를 설정해야 하며, 이 sta
 
 ## 6. State Space Equation(State transition matrix)  
 
-1st Order : $x(t)=e^{at}x(0)$ + $\int\mathrm{e}^{a(t-\tau)}bu(\tau)\mathrm{d}\tau$  
+**1st Order** : $x(t)=e^{at}x(0)$ + $\int\mathrm{e}^{a(t-\tau)}bu(\tau)\mathrm{d}\tau$  
   
-n-th Order : $x(t)=exp(At)x(0)$ + $\int\mathrm{exp[A(t-\tau)]}Bu(\tau)\mathrm{d}\tau$  
+**n-th Order** : $x(t)=exp(At)x(0)$ + $\int\mathrm{exp[A(t-\tau)]}Bu(\tau)\mathrm{d}\tau$  
   
-$x(s)=[sI-A]^{-1}x(0)+[sI-A]^{-1}BU(s)$  
-$\Phi(s)=[sI-A]^{-1}$  
-$\Phi(t)=L^{-1}[\Phi(s)]$  
-$x(t)=\Phi(t)x(0)$ + $\int\mathrm{\Phi(t-\tau)}bu(\tau)\mathrm{d}\tau$
+(1) $x(s)=[sI-A]^{-1}x(0)+[sI-A]^{-1}BU(s)$  
+(2) $\Phi(s)=[sI-A]^{-1}$  
+(3) $\Phi(t)=L^{-1}[\Phi(s)]$  
+(4) $x(t)=\Phi(t)x(0)$ + $\int\mathrm{\Phi(t-\tau)}bu(\tau)\mathrm{d}\tau$  
 
 
 ## 7. Example 3.1 (State Space Equation)  
