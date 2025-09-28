@@ -164,7 +164,7 @@ q'(t)
 \frac{1}{M_1} \\
 0
 \begin{bmatrix}u(t)
-&&  
+$$  
 
 
 
