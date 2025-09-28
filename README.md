@@ -96,8 +96,7 @@ $$x'(t) = \begin{bmatrix}
 \end{bmatrix}x(t)+\begin{bmatrix}
 \frac{1}{C} \\
 0
-\end{bmatrix}u(t)
-$$, $$y(t) = \begin{bmatrix}
+\end{bmatrix}u(t), y(t) = \begin{bmatrix}
 0 & R
 \end{bmatrix}x(t)+0u(t)
 $$
