@@ -70,7 +70,7 @@ state를 정의하게 되면 시스템은 식 (1)과 같이 1차 미분방정식
 **State vector**  
 
 $$
-**x(t)** = \begin{pmatrix}
+x(t) = \begin{pmatrix}
 x_1(t) \\
 x_2(t) \\
 \vdots \\
@@ -85,12 +85,7 @@ Output equation : $y(t)=Cx(t)+Du(t)$
   
 **EX. RLC circuit**  
 
-$\frac{dx_1(t)}{dt}=\frac{1}{C}[-x_2(t)+u(t)]$,  
-  
-$\frac{dx_2(t)}{dt}=\frac{1}{L}[x_1(t)-Rx_2(t)]$,  
-  
-$y(t)=Rx_2(t)$  
-  
+$\frac{dx_1(t)}{dt}=\frac{1}{C}[-x_2(t)+u(t)]$, $\frac{dx_2(t)}{dt}=\frac{1}{L}[x_1(t)-Rx_2(t)]$, $y(t)=Rx_2(t)$  
   
 $$x'(t) = \begin{bmatrix}
 0 & -\frac{1}{c} \\
