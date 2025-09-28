@@ -56,9 +56,9 @@ $x_1'(t)=ax_1(t)+bu(t)$
   
 (3) $(s-a)X(s)=x(0)+bU(s)$  
   
-(4) $X(s)=/frac{1}{s-a}x(0)+\frac{1}{s-a}bU(s)$  
+(4) $X(s)=\frac{1}{s-a}x(0)+\frac{1}{s-a}bU(s)$  
   
-(5) $x(t)=e^{at}$+$\int$ $e^{a(t-\tau)}bu(\tau)d\tau$  
+(5) $x(t)=e^{at}$+ $\int$ $e^{a(t-\tau)}bu(\tau)d\tau$  
   
 (6) $e^{at}=\phi(t)$  
   
