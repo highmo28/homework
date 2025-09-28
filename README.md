@@ -35,9 +35,9 @@ state를 정의하면 원래의 2차 미분방정식 (1)은 두 개의 1차 미�
   
 (1) $x_1(t)=v_c(t), x_2(t)=i_L(t)$  
   
-(2) $u(t)=C\frac{dx_1(t)}{dt}+x_2(t) &rarr; \frac{dx_1(t)}{dt}=\frac{1}{C}[-x_2(t)+u(t)]$ **By KCL**  
+(2) **KCL** : $u(t)=C\frac{dx_1(t)}{dt}+x_2(t) &rarr; \frac{dx_1(t)}{dt}=\frac{1}{C}[-x_2(t)+u(t)]$  
   
-(3) $L\frac{x_2(t)}{dt}+Rx_2(t)-x_1(t)=0 &rarr; \frac{x_2(t)}{dt}=\frac{1}{L}[x_1(t)-Rx_2(t)]$ **By KVL**  
+(3) **KVL** : $L\frac{x_2(t)}{dt}+Rx_2(t)-x_1(t)=0 &rarr; \frac{x_2(t)}{dt}=\frac{1}{L}[x_1(t)-Rx_2(t)]$  
   
 (4) $\frac{dx_1(t)}{dt}=\frac{1}{C}[-x_2(t)+u(t)]$,  
   
@@ -122,7 +122,7 @@ n차 미분방정식을 풀 때는 n개의 state를 설정해야 하며, 이 sta
 n-th Order : $x(t)=exp(At)x(0)$ + $\int\mathrm{exp[A(t-\tau)]}Bu(\tau)\mathrm{d}\tau$  
   
 $x(s)=[sI-A]^{-1}x(0)+[sI-A]^{-1}BU(s)$  
-$\phi(s)[sI-A]^{-1}$  
+$\Phi(s)=[sI-A]^{-1}$  
 $\Phi(t)=L^{-1}[\Phi(s)]$  
 $x(t)=\Phi(t)x(0)$ + $\int\mathrm{\Phi(t-\tau)}bu(\tau)\mathrm{d}\tau$
 
