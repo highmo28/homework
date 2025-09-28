@@ -91,14 +91,13 @@ $\frac{dx_2(t)}{dt}=\frac{1}{L}[x_1(t)-Rx_2(t)]$,
   
 $y(t)=Rx_2(t)$  
   
-$&darr;$  
+$&darr;&darr;&darr;&darr;&darr;$  
   
 $$x'(t) = \begin{bmatrix}
 0 & -\frac{1}{c} \\
 \frac{1}{L} & -\frac{R}{L}
 \end{bmatrix}x(t)
-$$
-+$$\begin{bmatrix}
+$$+$$\begin{bmatrix}
 \frac{1}{C} \\
 0
 \end{bmatrix}u(t)
