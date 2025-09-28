@@ -49,8 +49,16 @@ $x_1'(t)=ax_1(t)+bu(t)$
 다음으로 KVL을 적용하여 또 다른 식을 세우고, 이를 $x_2(t)$의 1차 미분방정식으로 정리한다. 이 역시 동일한 이유로 상태방정식 형태로 표현하기 위함이다. 그 식은 (3)의 우측에서 확인할 수 있다.  
 결과적으로, 두 개의 1차 미분방정식으로 이루어진 연립방정식으로 정리할 수 있게되고 식 (6)에서 출력에 대한 식을 확인할 수 있다.
 
-
-
+## 4. State Space Equation (1st order state differential equation)  
+(1) $x'(t)=ax(t)+bu(t)$  
+  
+(2) $sX(s)-x(0)=aX(s)+bU(s)$  
+  
+(3) $(s-a)X(s)=x(0)+bU(s)$  
+  
+(4) $X(s)=/frac{1}{s-a}x(0)+\frac{1}{s-a}bU(s)$  
+  
+(5) $x(t)=e^at$$x(0)+$\int_0^\infty \mathrm{e}^{-x}\,\mathrm{d}x$
 
 
 
