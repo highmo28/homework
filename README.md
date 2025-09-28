@@ -147,14 +147,24 @@ x_1(t) \\
 x_2(t) \\
 x_3(t) \\
 x_4(t)
-\end{pmatrix}+
+\end{pmatrix}=
 \begin{pmatrix}
 p(t) \\
 q(t) \\
 p'(t) \\
 q'(t)
-\end{pmatrix}
-$$
+\end{pmatrix}, x'(t)=\begin{bmatrix}
+0 & 0 & 1 & 0 \\
+0 & 0 & 0 & 1 \\
+-\frac{k_1}{M_1} & \frac{k_1}{M_1} & -\frac{b_1}{M_1} & \frac{b_1}{M_1} \\
+\frac{k_1}{M_2} & -\frac{k_1+k_2}{M_2} & \frac{b_1}{M_2} & -\frac{b_1+b_2}{M_2}
+\end{pmatrix}x(t)+\begin{bmatrix}
+0 \\
+0 \\
+\frac{1}{M_1} \\
+0
+\begin{bmatrix}u(t)
+&&  
 
 
 
