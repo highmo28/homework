@@ -98,7 +98,7 @@ Output equation : $y(t)=Cx(t)+Du(t)$
   
 **EX. RLC circuit**  
 
-$\frac{dx_1(t)}{dt}=\frac{1}{C}[-x_2(t)+u(t)]$, $\frac{dx_2(t)}{dt}=\frac{1}{L}[x_1(t)-Rx_2(t)]$, $y(t)=Rx_2(t)$  
+* $\frac{dx_1(t)}{dt}=\frac{1}{C}[-x_2(t)+u(t)]$, $\frac{dx_2(t)}{dt}=\frac{1}{L}[x_1(t)-Rx_2(t)]$, $y(t)=Rx_2(t)$  
   
   
 $$x'(t) = \begin{bmatrix}
