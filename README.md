@@ -84,7 +84,7 @@ $$
 
 ### (a) 폐루프 전달함수 T(s)=Y(s)/R(s)
 $V_1(s)=(R(s)-Y(s))\times \frac{s+2}{s+8}$  
-$V(s)\frac{1}{s-3}\times V_1(s)$  
+$V(s)=\frac{1}{s-3}\times V_1(s)$  
 $Y(s)=\frac{1}{s}\times V(s)=\frac{1}{s}\times \frac{1}{s-3}\times \frac{s+2}{s+8}\times (R-Y)=\frac{s+2}{s(s-3)(s+8)}\times (R-Y)$  
 
 $[s(s-3)(s+8)+(s+2)]\times Y(s)=(s+2)\times R(s)$  
@@ -92,10 +92,10 @@ $T(s)=\frac{Y(s)}{R(s)}=\frac{s+2}{s^3+5s^2-23s+2}$
 
 
 ### (b) 상태변수 모델
-$Y(s)=(s+2)\times Z(s)$
+$Y(s)=(s+2)\times Z(s)$  
 $R(s)=(s^3+5s^2-23s+2)\times Z(s)$
 
-$y(t)=z'(t)+2z(t)$
+$y(t)=z'(t)+2z(t)$  
 $r(t)=z'''(t)+5z''(t)-23z'(t)+2z(t)$
 
 **state 정의**  
@@ -139,8 +139,8 @@ $y=Cx+Dr$
 주어진 전달함수  
 $T(s)=\frac{Y(s)}{R(s)}=\frac{8(s+5)}{s^3+12s^2+44s+48}$  
 
-보조변수 Z(s)를 두면,  
-$Y(s)=(8s+40)Z(s), R(s)=(s^3+12s^2+44s+48)Z(s)$  
+보조변수 $Z(s)$를 두면,  
+$Y(s)=(8s+40)Z(s),\quad R(s)=(s^3+12s^2+44s+48)Z(s)$  
 
 
 **역라플라스 변환**  
@@ -149,14 +149,12 @@ $y(t) = 8z'(t)+40z(t)$
 $r(t) = z'''(t) + 12z''(t) + 44z'(t) + 48z(t)$  
 
 **상태변수 정의**  
-$x_1=z, x_2=z', x_3 = z''$
+$x_1=z,\quad x_2=z',\quad x_3 = z''$
 이에 따라  
 
 $x'_1=x_2$  
 $x'_2=x_3$  
 $x'_3=-48x_1-44x_2-12x_3+r$  
-
-출력식:  
 
 $$y=\begin{bmatrix}
 40 & 8 & 0 \\
@@ -190,11 +188,7 @@ D = 0
 $$  
 
 ### (b) 상태천이행렬 $\Phi(t)$를 구하라  
-라플라스 변환을 적용하면,  
-
-$Lx'(t)=sX(s)-x(0)$  
-
-따라서 입력이 $u(t)$일 때  
+입력이 $u(t)$일 때  
 
 $sX(s)=AX(s)+BU(s)$  
 
@@ -250,13 +244,16 @@ $$
 -6e^{-2t} + 12e^{-4t} - 6e^{-6t} & -\tfrac{5}{2}e^{-2t} + 8e^{-4t} - \tfrac{9}{2}e^{-6t} & -\tfrac{1}{4}e^{-2t} + e^{-4t} - \tfrac{3}{4}e^{-6t} \\
 12e^{-2t} - 48e^{-4t} + 36e^{-6t} & 5e^{-2t} - 32e^{-4t} + 27e^{-6t} & \tfrac{1}{2}e^{-2t} - 4e^{-4t} + \tfrac{9}{2}e^{-6t}
 \end{bmatrix}
-$$
+$$  
 
------
+----
 ## P3.17  
 <img width="291" height="147" alt="image" src="https://github.com/user-attachments/assets/35c315fc-2c1e-4922-8172-f7634562b504" />  
 
-**전달함수 $G(s)=\frac{Y(s)}{U(s)}=C(sI-A)^{-1}B+D$**  
+**전달함수**  
+$sX(s)=AX(s)+BU(s) \rightarrow X(s)=(sI-A)^{-1}BU(s),\quad \Phi(s)=(sI-A)^{-1}$  
+$Y(s)=CX(s) \rightarrow Y(s)=C\Phi(s)BU(s)$  
+$G(s)=\frac{Y(s)}{U(s)}=C(sI-A)^{-1}B+D$  
 
 $$
 A =
@@ -281,10 +278,8 @@ C =
 D = 0
 $$  
 
-**M=sI-A**
-
 $$
-M =
+M = sI-A =
 \begin{bmatrix}
 s - 1 & -1 & 1 \\
 -4 & s - 3 & 0 \\
@@ -296,7 +291,7 @@ $$
 $det(M)=s^3-14s^2+37s+20$  
 
 **분자**  
-adj(M)는 B에 의해 3열만 계산이 되는것을 알 수 있다.  
+$adj(M)$는 B에 의해 3열만 계산이 되는것을 알 수 있다.  
 
 $$
 C_{31} = -s + 3, \quad
@@ -321,7 +316,6 @@ $$
 이렇게 계산된 이후 C에 의해 1행만 남게되므로 결국 분자는 다음과 같은 식이 된다.  
 $-4(s-3)$
 
----
 
 **최종 전달함수 G(s)=Y(s)/U(s)**
 
