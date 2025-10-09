@@ -252,6 +252,79 @@ $$
 \end{bmatrix}
 $$
 
+-----
+## P3.17  
+**전달함수 $G(s)=\frac{Y(s)}{U(s)}=C(sI-A)^{-1}B+D$**  
+
+$$
+A =
+\begin{bmatrix}
+1 & 1 & -1 \\
+4 & 3 & 0 \\
+-2 & 1 & 10
+\end{bmatrix},
+\quad
+B =
+\begin{bmatrix}
+0 \\
+0 \\
+4
+\end{bmatrix},
+\quad
+C =
+\begin{bmatrix}
+1 & 0 & 0
+\end{bmatrix},
+\quad
+D = 0
+$$  
+
+**M=sI-A**
+
+$$
+M =
+\begin{bmatrix}
+s - 1 & -1 & 1 \\
+-4 & s - 3 & 0 \\
+2 & -1 & s - 10
+\end{bmatrix}
+$$  
+
+**분모**  
+$det(M)=s^3-14s^2+37s+20$  
+
+**분자**  
+adj(M)는 B에 의해 3열만 계산이 되는것을 알 수 있다.  
+
+$$
+C_{31} = -s + 3, \quad
+C_{32} = -4, \quad
+C_{33} = s^2 - 4s - 1
+$$  
+
+$$
+adj(M) =4\begin{bmatrix}
+C_{31} \\
+C_{32} \\
+C_{33}
+\end{bmatrix}
+= 4
+\begin{bmatrix}
+-s + 3 \\
+-4 \\
+s^2 - 4s - 1
+\end{bmatrix}
+$$  
+
+이렇게 계산된 이후 C에 의해 1행만 남게되므로 결국 분자는 다음과 같은 식이 된다.  
+$-4(s-3)$
+
+---
+
+**최종 전달함수 G(s)=Y(s)/U(s)**
+
+$G(s) = \frac{-4s + 12}{s^3 - 14s^2 + 37s + 20}$
+
 
 
 
