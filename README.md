@@ -47,7 +47,7 @@ $$
 
 
 ### 상태미분방정식 구하기
-$$x_1(t)=i_L(t), x_2(t)=V_C(t), V_R=V_2-V_C, u(t)=\begin{bmatrix} V_1(t) \\ V_2(t) \end{bmatrix}, y(t)=V_R(t)$$  
+$$x_1(t)=i_L(t), \quad x_2(t)=V_C(t), \quad V_R=V_2-V_C, \quad u(t)=\begin{bmatrix} V_1(t) \\ V_2(t) \end{bmatrix}, \quad y(t)=V_R(t)$$  
 
 **KVL**  
 $-V_1(t)+L\frac{di_L(t)}{dt}-V_c(t)+V_2(t)=0$  
