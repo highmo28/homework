@@ -55,17 +55,17 @@ $-V_1(t)+Lx'_1(t)-x_2(t)+V_2(t)=0$
 $x'_1(t)=\frac{1}{L}x_2(t)+\frac{1}{L}V_1(t)-\frac{1}{L}V_2(t)$  
 
 **KCL**  
-$C\frac{dV_c(t)}{dt}=i_R-i_L$ → $Cx'_2(t)=\frac{V}{R}-x_1(t)=-x_1(t)-\frac{x_2}{R}+\frac{V_2}{R}$  
-$x'_2(t)=-\frac{1}{C}x_1(t)-\frac{1}{RC}x_2(t)+\frac{1}{RC}v_2(t)$  
+$C\frac{dV_c(t)}{dt}=i_R-i_L$ → $Cx'_2(t)=\frac{V}{R}-x_1(t)=-x_1(t)+\frac{V_2-x_2}{R}$  
+$x'_2(t)=-\frac{1}{C}x_1(t)+\frac{V_2(t)-x_2(t)}{RC}$  
 
 - $x'_1(t)=\frac{1}{L}x_2(t)+\frac{1}{L}V_1(t)-\frac{1}{L}V_2(t)$
 - $x'_2(t)=-\frac{1}{C}x_1(t)-\frac{1}{RC}x_2(t)+\frac{1}{RC}V_2(t)$
 
 $$y(t)=V_R(t)=V=V_2-V_C=V_2(t)-x_2(t)$$  
-$$ X'(t)=\begin{bmatrix}
+$$ x'(t)=\begin{bmatrix}
 0 & \frac{1}{L} \\
--\frac{1}{L} & -\frac{1}{RC} \\
-\end{bmatrix}X(t)+\begin{bmatrix}
+-\frac{1}{C} & -\frac{1}{RC} \\
+\end{bmatrix}x(t)+\begin{bmatrix}
 \frac{1}{L} & -\frac{1}{L} \\
 0 & \frac{1}{RC} \\
 \end{bmatrix}u(t)
