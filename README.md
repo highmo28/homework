@@ -254,6 +254,8 @@ $$
 
 -----
 ## P3.17  
+<img width="291" height="147" alt="image" src="https://github.com/user-attachments/assets/35c315fc-2c1e-4922-8172-f7634562b504" />  
+
 **전달함수 $G(s)=\frac{Y(s)}{U(s)}=C(sI-A)^{-1}B+D$**  
 
 $$
