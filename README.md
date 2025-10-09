@@ -129,7 +129,130 @@ $$D=0$$
 
 **상태공간 표현식**  
 $x'=Ax+Br$  
-$y=Cx+Dr$
+$y=Cx+Dr$  
+
+------
+## P3.12
+<img width="290" height="103" alt="image" src="https://github.com/user-attachments/assets/a6ed72e3-bcce-472f-bf3a-3410fed91346" />  
+
+### (a) 상태공간모델을 구하라
+주어진 전달함수  
+$T(s)=\frac{Y(s)}{R(s)}=\frac{8(s+5)}{s^3+12s^2+44s+48}$  
+
+보조변수 Z(s)를 두면,  
+$Y(s)=(8s+40)Z(s), R(s)=(s^3+12s^2+44s+48)Z(s)$  
+
+
+**역라플라스 변환**  
+$y(t) = 8z'(t)+40z(t)$  
+  
+$r(t) = z'''(t) + 12z''(t) + 44z'(t) + 48z(t)$  
+
+**상태변수 정의**  
+$x_1=z, x_2=z', x_3 = z''$
+이에 따라  
+
+$x'_1=x_2$  
+$x'_2=x_3$  
+$x'_3=-48x_1-44x_2-12x_3+r$  
+
+출력식:  
+
+$$y=\begin{bmatrix}
+40 & 8 & 0 \\
+\end{bmatrix}\begin{bmatrix}
+x_1 \\
+x_2 \\
+x_3 \\
+\end{bmatrix}
+$$  
+
+**상태공간모델**  
+
+$$
+A=\begin{bmatrix}
+0 & 1 & 0 \\
+0 & 0 & 1 \\
+-48 & -44 & -12
+\end{bmatrix},
+\quad
+B=\begin{bmatrix}
+0 \\
+0 \\
+1
+\end{bmatrix},
+\quad
+C=\begin{bmatrix}
+40 & 8 & 0
+\end{bmatrix}
+\quad
+D = 0
+$$  
+
+### (b) 상태천이행렬 $\Phi(t)$를 구하라  
+라플라스 변환을 적용하면,  
+
+$Lx'(t)=sX(s)-x(0)$  
+
+따라서 입력이 $u(t)$일 때  
+
+$sX(s)=AX(s)+BU(s)$  
+
+즉,  
+
+$X(s) = (sI-A)^{-1}BU(s)$  
+
+여기서 정의되는  
+
+$\Phi(s) = (sI-A)^{-1}$  
+
+을 상태천이행렬의 라플라스 영역 표현이라 부르며,  
+역라플라스를 취하면 시간영역에서 다음과 같은 형태가 된다:
+
+$\Phi(t) = e^{At}$  
+
+**특성방정식**  
+
+$$
+sI - A =
+\begin{bmatrix}
+s & -1 & 0 \\
+0 & s & -1 \\
+48 & 44 & s+12
+\end{bmatrix}
+$$
+
+분자  
+
+$$
+adj(sI-A) =
+\begin{bmatrix}
+s^2+12s+44 & s+12 & 1 \\
+-48 & s^2+12s & s \\
+-48s & -(44s+48) & s^2
+\end{bmatrix}
+$$  
+
+분모  
+
+$$
+\det(sI - A) = s^3 + 12s^2 + 44s + 48 = (s + 2)(s + 4)(s + 6)
+$$  
+
+라플라스 영역에서  
+$\Phi(s)=(sI-A)^{-1}$  
+이며, 각 원소를 부분분수 전개 후 역라플라스 변환하면 다음과 같다:
+
+$$
+\Phi(t) = e^{At} =
+\begin{bmatrix}
+3e^{-2t} - 3e^{-4t} + e^{-6t} & \tfrac{5}{4}e^{-2t} - 2e^{-4t} + \tfrac{3}{4}e^{-6t} & \tfrac{1}{8}e^{-2t} - \tfrac{1}{4}e^{-4t} + \tfrac{1}{8}e^{-6t} \\
+-6e^{-2t} + 12e^{-4t} - 6e^{-6t} & -\tfrac{5}{2}e^{-2t} + 8e^{-4t} - \tfrac{9}{2}e^{-6t} & -\tfrac{1}{4}e^{-2t} + e^{-4t} - \tfrac{3}{4}e^{-6t} \\
+12e^{-2t} - 48e^{-4t} + 36e^{-6t} & 5e^{-2t} - 32e^{-4t} + 27e^{-6t} & \tfrac{1}{2}e^{-2t} - 4e^{-4t} + \tfrac{9}{2}e^{-6t}
+\end{bmatrix}
+$$
+
+
 
 
 
